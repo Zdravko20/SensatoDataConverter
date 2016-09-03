@@ -72,9 +72,13 @@
                                 currRow++;
                                 currSensor--;
                             }
-                            
+
                             currSelectedFrameIndex++;
                             currRow = newStartingRow;
+
+                            worksheet.Cells[currRow + 1, this.outsideTempCol]
+                                .Value = TableConstants.NoOutsideTempValue;
+
                         }
                         else if (splittedBeeTempInfo.Length == 1)
                         {
@@ -86,8 +90,6 @@
 
                 worksheet.Cells[currRow + 1, this.averageCol]
                      .Value = currentAverageTemp / (NumberOfSensors * selectedFrames.Length);
-                worksheet.Cells[currRow + 1, this.outsideTempCol]
-                    .Value = TableConstants.NoOutsideTempValue;
 
                 worksheet.Cells[currRow + 1, this.timeCol].Value = beeTempInfo[beeTempInfo.Length - 1].Split(',')[0];
                 worksheet.Cells[currRow , this.dateCol].Value = beeTempInfo[beeTempInfo.Length - 1].Split(',')[1];
