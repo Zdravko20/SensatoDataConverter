@@ -9,7 +9,7 @@
     using IO;
     using TableConvertors;
 
-    public partial class SensatoTableConverter : Form
+    public partial class SensatoDataConverter : Form
     {
         private const string RequiredFileExtention = "txt";
         private const string ResultFileExtention = "xlsx";
@@ -28,7 +28,7 @@
         private string[] allLines = null;
         private string[] validLines = null;
 
-        public SensatoTableConverter()
+        public SensatoDataConverter()
         {
             InitializeComponent();
         }

@@ -13,7 +13,7 @@ namespace TableConverter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SensatoTableConverter());
+            Application.Run(new SensatoDataConverter());
         }
     }
 }

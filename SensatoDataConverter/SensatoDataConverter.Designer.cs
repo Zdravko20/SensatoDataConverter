@@ -1,6 +1,6 @@
 ﻿namespace TableConverter
 {
-    partial class SensatoTableConverter
+    partial class SensatoDataConverter
     {
         /// <summary>
         /// Required designer variable.
@@ -68,7 +68,7 @@
             this.ConvertButton.UseVisualStyleBackColor = true;
             this.ConvertButton.Click += new System.EventHandler(this.ConvertButton_Click);
             // 
-            // SensatoTableConverter
+            // SensatoDataConverter
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -81,8 +81,8 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(450, 340);
             this.MinimumSize = new System.Drawing.Size(450, 340);
-            this.Name = "SensatoTableConverter";
-            this.Text = "Sensato Table Converter";
+            this.Name = "SensatoDataConverter";
+            this.Text = "Sensato Data Converter";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.TableConverter_Paint);
             this.ResumeLayout(false);
 

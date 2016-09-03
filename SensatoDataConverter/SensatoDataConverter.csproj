@@ -56,11 +56,11 @@
     <Compile Include="Contracts\ITableConverter.cs" />
     <Compile Include="FormatChecker.cs" />
     <Compile Include="IO\FileInputReader.cs" />
-    <Compile Include="SensatoTableConverter.cs">
+    <Compile Include="SensatoDataConverter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SensatoTableConverter.Designer.cs">
-      <DependentUpon>SensatoTableConverter.cs</DependentUpon>
+    <Compile Include="SensatoDataConverter.Designer.cs">
+      <DependentUpon>SensatoDataConverter.cs</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,8 +71,8 @@
     <Compile Include="FrameSelecting.Designer.cs">
       <DependentUpon>FrameSelecting.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SensatoTableConverter.resx">
-      <DependentUpon>SensatoTableConverter.cs</DependentUpon>
+    <EmbeddedResource Include="SensatoDataConverter.resx">
+      <DependentUpon>SensatoDataConverter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

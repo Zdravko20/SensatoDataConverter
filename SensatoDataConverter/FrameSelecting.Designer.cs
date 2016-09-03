@@ -72,7 +72,7 @@
             // frame2Checkbox
             // 
             this.frame2Checkbox.AutoSize = true;
-            this.frame2Checkbox.Location = new System.Drawing.Point(0, 77);
+            this.frame2Checkbox.Location = new System.Drawing.Point(0, 75);
             this.frame2Checkbox.Name = "frame2Checkbox";
             this.frame2Checkbox.Size = new System.Drawing.Size(69, 19);
             this.frame2Checkbox.TabIndex = 1;
@@ -83,7 +83,7 @@
             // frame13Checkbox
             // 
             this.frame13Checkbox.AutoSize = true;
-            this.frame13Checkbox.Location = new System.Drawing.Point(76, 146);
+            this.frame13Checkbox.Location = new System.Drawing.Point(76, 144);
             this.frame13Checkbox.Name = "frame13Checkbox";
             this.frame13Checkbox.Size = new System.Drawing.Size(76, 19);
             this.frame13Checkbox.TabIndex = 2;
@@ -94,7 +94,7 @@
             // frame4Checkbox
             // 
             this.frame4Checkbox.AutoSize = true;
-            this.frame4Checkbox.Location = new System.Drawing.Point(0, 123);
+            this.frame4Checkbox.Location = new System.Drawing.Point(0, 121);
             this.frame4Checkbox.Name = "frame4Checkbox";
             this.frame4Checkbox.Size = new System.Drawing.Size(69, 19);
             this.frame4Checkbox.TabIndex = 3;
@@ -105,7 +105,7 @@
             // frame6Checkbox
             // 
             this.frame6Checkbox.AutoSize = true;
-            this.frame6Checkbox.Location = new System.Drawing.Point(0, 169);
+            this.frame6Checkbox.Location = new System.Drawing.Point(0, 167);
             this.frame6Checkbox.Name = "frame6Checkbox";
             this.frame6Checkbox.Size = new System.Drawing.Size(69, 19);
             this.frame6Checkbox.TabIndex = 4;
@@ -116,7 +116,7 @@
             // frame3Checkbox
             // 
             this.frame3Checkbox.AutoSize = true;
-            this.frame3Checkbox.Location = new System.Drawing.Point(0, 100);
+            this.frame3Checkbox.Location = new System.Drawing.Point(0, 98);
             this.frame3Checkbox.Name = "frame3Checkbox";
             this.frame3Checkbox.Size = new System.Drawing.Size(69, 19);
             this.frame3Checkbox.TabIndex = 5;
@@ -127,7 +127,7 @@
             // frame14Checkbox
             // 
             this.frame14Checkbox.AutoSize = true;
-            this.frame14Checkbox.Location = new System.Drawing.Point(76, 169);
+            this.frame14Checkbox.Location = new System.Drawing.Point(76, 167);
             this.frame14Checkbox.Name = "frame14Checkbox";
             this.frame14Checkbox.Size = new System.Drawing.Size(76, 19);
             this.frame14Checkbox.TabIndex = 6;
@@ -149,7 +149,7 @@
             // frame5Checkbox
             // 
             this.frame5Checkbox.AutoSize = true;
-            this.frame5Checkbox.Location = new System.Drawing.Point(0, 146);
+            this.frame5Checkbox.Location = new System.Drawing.Point(0, 144);
             this.frame5Checkbox.Name = "frame5Checkbox";
             this.frame5Checkbox.Size = new System.Drawing.Size(69, 19);
             this.frame5Checkbox.TabIndex = 8;
@@ -160,7 +160,7 @@
             // frame8Checkbox
             // 
             this.frame8Checkbox.AutoSize = true;
-            this.frame8Checkbox.Location = new System.Drawing.Point(1, 217);
+            this.frame8Checkbox.Location = new System.Drawing.Point(0, 215);
             this.frame8Checkbox.Name = "frame8Checkbox";
             this.frame8Checkbox.Size = new System.Drawing.Size(69, 19);
             this.frame8Checkbox.TabIndex = 9;
@@ -171,7 +171,7 @@
             // frame10Checkbox
             // 
             this.frame10Checkbox.AutoSize = true;
-            this.frame10Checkbox.Location = new System.Drawing.Point(76, 77);
+            this.frame10Checkbox.Location = new System.Drawing.Point(76, 75);
             this.frame10Checkbox.Name = "frame10Checkbox";
             this.frame10Checkbox.Size = new System.Drawing.Size(76, 19);
             this.frame10Checkbox.TabIndex = 10;
@@ -193,7 +193,7 @@
             // frame11Checkbox
             // 
             this.frame11Checkbox.AutoSize = true;
-            this.frame11Checkbox.Location = new System.Drawing.Point(76, 100);
+            this.frame11Checkbox.Location = new System.Drawing.Point(76, 98);
             this.frame11Checkbox.Name = "frame11Checkbox";
             this.frame11Checkbox.Size = new System.Drawing.Size(76, 19);
             this.frame11Checkbox.TabIndex = 12;
@@ -204,7 +204,7 @@
             // frame12Checkbox
             // 
             this.frame12Checkbox.AutoSize = true;
-            this.frame12Checkbox.Location = new System.Drawing.Point(76, 123);
+            this.frame12Checkbox.Location = new System.Drawing.Point(76, 121);
             this.frame12Checkbox.Name = "frame12Checkbox";
             this.frame12Checkbox.Size = new System.Drawing.Size(76, 19);
             this.frame12Checkbox.TabIndex = 13;
@@ -215,7 +215,7 @@
             // frame15Checkbox
             // 
             this.frame15Checkbox.AutoSize = true;
-            this.frame15Checkbox.Location = new System.Drawing.Point(76, 192);
+            this.frame15Checkbox.Location = new System.Drawing.Point(76, 190);
             this.frame15Checkbox.Name = "frame15Checkbox";
             this.frame15Checkbox.Size = new System.Drawing.Size(76, 19);
             this.frame15Checkbox.TabIndex = 14;
@@ -231,12 +231,12 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(327, 22);
             this.label1.TabIndex = 15;
-            this.label1.Text = "Please choose active sensors\r\n";
+            this.label1.Text = "Please choose active frames";
             // 
             // ConfirmButton
             // 
             this.ConfirmButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConfirmButton.Location = new System.Drawing.Point(180, 250);
+            this.ConfirmButton.Location = new System.Drawing.Point(179, 240);
             this.ConfirmButton.Name = "ConfirmButton";
             this.ConfirmButton.Size = new System.Drawing.Size(136, 37);
             this.ConfirmButton.TabIndex = 16;
@@ -247,7 +247,7 @@
             // frame23Checkbox
             // 
             this.frame23Checkbox.AutoSize = true;
-            this.frame23Checkbox.Location = new System.Drawing.Point(158, 192);
+            this.frame23Checkbox.Location = new System.Drawing.Point(158, 190);
             this.frame23Checkbox.Name = "frame23Checkbox";
             this.frame23Checkbox.Size = new System.Drawing.Size(76, 19);
             this.frame23Checkbox.TabIndex = 23;
@@ -258,7 +258,7 @@
             // frame20Checkbox
             // 
             this.frame20Checkbox.AutoSize = true;
-            this.frame20Checkbox.Location = new System.Drawing.Point(158, 123);
+            this.frame20Checkbox.Location = new System.Drawing.Point(158, 121);
             this.frame20Checkbox.Name = "frame20Checkbox";
             this.frame20Checkbox.Size = new System.Drawing.Size(76, 19);
             this.frame20Checkbox.TabIndex = 22;
@@ -269,7 +269,7 @@
             // frame19Checkbox
             // 
             this.frame19Checkbox.AutoSize = true;
-            this.frame19Checkbox.Location = new System.Drawing.Point(158, 100);
+            this.frame19Checkbox.Location = new System.Drawing.Point(158, 98);
             this.frame19Checkbox.Name = "frame19Checkbox";
             this.frame19Checkbox.Size = new System.Drawing.Size(76, 19);
             this.frame19Checkbox.TabIndex = 21;
@@ -280,7 +280,7 @@
             // frame18Checkbox
             // 
             this.frame18Checkbox.AutoSize = true;
-            this.frame18Checkbox.Location = new System.Drawing.Point(158, 77);
+            this.frame18Checkbox.Location = new System.Drawing.Point(158, 75);
             this.frame18Checkbox.Name = "frame18Checkbox";
             this.frame18Checkbox.Size = new System.Drawing.Size(76, 19);
             this.frame18Checkbox.TabIndex = 20;
@@ -302,7 +302,7 @@
             // frame22Checkbox
             // 
             this.frame22Checkbox.AutoSize = true;
-            this.frame22Checkbox.Location = new System.Drawing.Point(158, 169);
+            this.frame22Checkbox.Location = new System.Drawing.Point(158, 167);
             this.frame22Checkbox.Name = "frame22Checkbox";
             this.frame22Checkbox.Size = new System.Drawing.Size(76, 19);
             this.frame22Checkbox.TabIndex = 18;
@@ -313,7 +313,7 @@
             // frame21Checkbox
             // 
             this.frame21Checkbox.AutoSize = true;
-            this.frame21Checkbox.Location = new System.Drawing.Point(158, 146);
+            this.frame21Checkbox.Location = new System.Drawing.Point(158, 144);
             this.frame21Checkbox.Name = "frame21Checkbox";
             this.frame21Checkbox.Size = new System.Drawing.Size(76, 19);
             this.frame21Checkbox.TabIndex = 17;
@@ -357,7 +357,7 @@
             // frame26Checkbox
             // 
             this.frame26Checkbox.AutoSize = true;
-            this.frame26Checkbox.Location = new System.Drawing.Point(240, 79);
+            this.frame26Checkbox.Location = new System.Drawing.Point(239, 75);
             this.frame26Checkbox.Name = "frame26Checkbox";
             this.frame26Checkbox.Size = new System.Drawing.Size(76, 19);
             this.frame26Checkbox.TabIndex = 24;
@@ -368,7 +368,7 @@
             // FrameSelecting
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(327, 299);
+            this.ClientSize = new System.Drawing.Size(327, 289);
             this.Controls.Add(this.frame25Checkbox);
             this.Controls.Add(this.frame24Checkbox);
             this.Controls.Add(this.frame17Checkbox);
