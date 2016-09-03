@@ -14,6 +14,7 @@
         private const int StartingRow = 3;
         private const int StartingCol = 3;
         private const int NumberOfFrames = 28;
+        private const int DateColumnWidth = 10;
         private const string splitPattern = ",---,|---";
 
         private int dateCol;
@@ -132,7 +133,7 @@
             worksheet.Cells[StartingRow, ++lastUsedCol].Value = TableConstants.DateHeader;
             this.dateCol = lastUsedCol;
 
-            worksheet.Column(this.dateCol).Width = 10;
+            worksheet.Column(this.dateCol).Width = DateColumnWidth;
         }
     }
 }
