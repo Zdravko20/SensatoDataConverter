@@ -158,16 +158,6 @@ namespace TableConverter
             this.selectedFrames.Add(26);
         }
 
-        private void frame27Checkbox_CheckedChanged(object sender, EventArgs e)
-        {
-            this.selectedFrames.Add(27);
-        }
-
-        private void frame28Checkbox_CheckedChanged(object sender, EventArgs e)
-        {
-            this.selectedFrames.Add(28);
-        }
-
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             this.Visible = false;

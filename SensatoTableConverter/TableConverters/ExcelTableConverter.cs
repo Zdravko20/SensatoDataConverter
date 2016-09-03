@@ -13,7 +13,8 @@
         private const int NumberOfSensors = 3;
         private const int StartingRow = 3;
         private const int StartingCol = 3;
-        private const int NumberOfFrames = 28;
+        private const int LastCol = 34;
+        private const int NumberOfFrames = 26;
         private const int DateColumnWidth = 10;
         private const string splitPattern = ",---,|---";
 
@@ -33,7 +34,7 @@
                 ExcelWorksheet worksheet = xlPackage.Workbook.Worksheets.Add("TestSheet");
                 worksheet.Cells.Style.HorizontalAlignment = ExcelHorizontalAlignment.Left;
 
-                this.CreateHeader(worksheet);
+                this.CreateHeaders(worksheet);
                 this.FillTable(worksheet, validFileLines, selectedFrames);
 
                 xlPackage.SaveAs(file);
@@ -63,12 +64,31 @@
                             for (int k = 0; k < splittedBeeTempInfo.Length; k++)
                             {
                                 int currentCol = this.positionOfFrame[selectedFrames[currSelectedFrameIndex]];
+                                #region FORMATTING CELLS
+                                if (k == 0)
+                                {
+                                    var topLine =
+                                        worksheet.Cells[currRow, StartingCol, currRow, LastCol];
+                                    topLine.Style.Border.Top.Style = ExcelBorderStyle.Thin;
+                                }
+                                
+                                worksheet.Cells[currRow, StartingCol].Style.Border.Left.Style = ExcelBorderStyle.Thin;
+                                worksheet.Cells[currRow, LastCol].Style.Border.Right.Style = ExcelBorderStyle.Thin;
+
+                                if (k == splittedBeeTempInfo.Length - 1)
+                                {
+                                    var bottomLine = worksheet.Cells[currRow, StartingCol, currRow, LastCol];
+                                    bottomLine.Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
+                                }
+                                #endregion
 
                                 worksheet.Cells[currRow, StartingCol].Value =
                                     string.Format(TableConstants.SensorNumber, currSensor);
+
                                 worksheet.Cells[currRow, currentCol].Value = splittedBeeTempInfo[k];
 
                                 currentAverageTemp += int.Parse(splittedBeeTempInfo[k]);
+
                                 currRow++;
                                 currSensor--;
                             }
@@ -96,15 +116,16 @@
                 worksheet.Cells[currRow + 1, this.dateCol].Value = beeTempInfo[beeTempInfo.Length - 1].Split(',')[1];
                 worksheet.Cells[currRow + 2, this.dateCol].Value = beeTempInfo[beeTempInfo.Length - 1].Split(',')[1];
 
+
                 newStartingRow += NumberOfSensors;                
             }
         }
 
-        private void CreateHeader(ExcelWorksheet worksheet)
+        private void CreateHeaders(ExcelWorksheet worksheet)
         {
             worksheet.Row(StartingRow).Style.VerticalAlignment = ExcelVerticalAlignment.Distributed;
 
-            var range = worksheet.Cells[StartingRow, StartingCol, StartingRow, StartingCol + NumberOfFrames + 5];
+            var range = worksheet.Cells[StartingRow, StartingCol, StartingRow, LastCol];
             range.Style.Border.Top.Style = ExcelBorderStyle.Thin;
             range.Style.Border.Left.Style = ExcelBorderStyle.Thin;
             range.Style.Border.Right.Style = ExcelBorderStyle.Thin;

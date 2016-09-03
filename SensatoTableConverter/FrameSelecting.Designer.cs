@@ -53,10 +53,8 @@
             this.frame22Checkbox = new System.Windows.Forms.CheckBox();
             this.frame21Checkbox = new System.Windows.Forms.CheckBox();
             this.frame25Checkbox = new System.Windows.Forms.CheckBox();
-            this.frame27Checkbox = new System.Windows.Forms.CheckBox();
             this.frame24Checkbox = new System.Windows.Forms.CheckBox();
             this.frame17Checkbox = new System.Windows.Forms.CheckBox();
-            this.frame28Checkbox = new System.Windows.Forms.CheckBox();
             this.frame26Checkbox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
@@ -334,17 +332,6 @@
             this.frame25Checkbox.UseVisualStyleBackColor = true;
             this.frame25Checkbox.CheckedChanged += new System.EventHandler(this.frame25Checkbox_CheckedChanged);
             // 
-            // frame27Checkbox
-            // 
-            this.frame27Checkbox.AutoSize = true;
-            this.frame27Checkbox.Location = new System.Drawing.Point(240, 100);
-            this.frame27Checkbox.Name = "frame27Checkbox";
-            this.frame27Checkbox.Size = new System.Drawing.Size(76, 19);
-            this.frame27Checkbox.TabIndex = 28;
-            this.frame27Checkbox.Text = "Frame27";
-            this.frame27Checkbox.UseVisualStyleBackColor = true;
-            this.frame27Checkbox.CheckedChanged += new System.EventHandler(this.frame27Checkbox_CheckedChanged);
-            // 
             // frame24Checkbox
             // 
             this.frame24Checkbox.AutoSize = true;
@@ -367,17 +354,6 @@
             this.frame17Checkbox.UseVisualStyleBackColor = true;
             this.frame17Checkbox.CheckedChanged += new System.EventHandler(this.frame17Checkbox_CheckedChanged);
             // 
-            // frame28Checkbox
-            // 
-            this.frame28Checkbox.AutoSize = true;
-            this.frame28Checkbox.Location = new System.Drawing.Point(240, 123);
-            this.frame28Checkbox.Name = "frame28Checkbox";
-            this.frame28Checkbox.Size = new System.Drawing.Size(76, 19);
-            this.frame28Checkbox.TabIndex = 25;
-            this.frame28Checkbox.Text = "Frame28";
-            this.frame28Checkbox.UseVisualStyleBackColor = true;
-            this.frame28Checkbox.CheckedChanged += new System.EventHandler(this.frame28Checkbox_CheckedChanged);
-            // 
             // frame26Checkbox
             // 
             this.frame26Checkbox.AutoSize = true;
@@ -394,10 +370,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(327, 299);
             this.Controls.Add(this.frame25Checkbox);
-            this.Controls.Add(this.frame27Checkbox);
             this.Controls.Add(this.frame24Checkbox);
             this.Controls.Add(this.frame17Checkbox);
-            this.Controls.Add(this.frame28Checkbox);
             this.Controls.Add(this.frame26Checkbox);
             this.Controls.Add(this.frame23Checkbox);
             this.Controls.Add(this.frame20Checkbox);
@@ -461,10 +435,8 @@
         private System.Windows.Forms.CheckBox frame22Checkbox;
         private System.Windows.Forms.CheckBox frame21Checkbox;
         private System.Windows.Forms.CheckBox frame25Checkbox;
-        private System.Windows.Forms.CheckBox frame27Checkbox;
         private System.Windows.Forms.CheckBox frame24Checkbox;
         private System.Windows.Forms.CheckBox frame17Checkbox;
-        private System.Windows.Forms.CheckBox frame28Checkbox;
         private System.Windows.Forms.CheckBox frame26Checkbox;
     }
 }
