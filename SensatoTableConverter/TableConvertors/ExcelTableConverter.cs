@@ -42,10 +42,10 @@
         private void FillTable(ExcelWorksheet worksheet, string[] validFileLines, int[] selectedFrames)
         {
             int newStartingRow = StartingRow + 2;
-            int currRow = newStartingRow;
 
             for (int i = 0; i < validFileLines.Length; i++)
             {
+                int currRow = newStartingRow;
                 int currSelectedFrameIndex = 0;
                 int currentAverageTemp = 0;
 
@@ -61,11 +61,11 @@
                             int currSensor = NumberOfSensors;
                             for (int k = 0; k < splittedBeeTempInfo.Length; k++)
                             {
-                                worksheet.Cells[currRow, StartingCol].Value = 
+                                int currentCol = this.positionOfFrame[selectedFrames[currSelectedFrameIndex]];
+
+                                worksheet.Cells[currRow, StartingCol].Value =
                                     string.Format(TableConstants.SensorNumber, currSensor);
-                                worksheet.Cells[currRow,
-                                    this.positionOfFrame[selectedFrames[currSelectedFrameIndex]]]
-                                    .Value = splittedBeeTempInfo[k];
+                                worksheet.Cells[currRow, currentCol].Value = splittedBeeTempInfo[k];
 
                                 currentAverageTemp += int.Parse(splittedBeeTempInfo[k]);
                                 currRow++;
@@ -74,11 +74,6 @@
                             
                             currSelectedFrameIndex++;
                             currRow = newStartingRow;
-
-                            worksheet.Cells[currRow + 1, this.averageCol]
-                                .Value = currentAverageTemp/(NumberOfSensors * selectedFrames.Length);
-                            worksheet.Cells[currRow + 1, this.outsideTempCol]
-                                .Value = TableConstants.NoOutsideTempValue;
                         }
                         else if (splittedBeeTempInfo.Length == 1)
                         {
@@ -87,6 +82,11 @@
                         }
                     }
                 }
+
+                worksheet.Cells[currRow + 1, this.averageCol]
+                     .Value = currentAverageTemp / (NumberOfSensors * selectedFrames.Length);
+                worksheet.Cells[currRow + 1, this.outsideTempCol]
+                    .Value = TableConstants.NoOutsideTempValue;
 
                 worksheet.Cells[currRow + 1, this.timeCol].Value = beeTempInfo[beeTempInfo.Length - 1].Split(',')[0];
                 worksheet.Cells[currRow , this.dateCol].Value = beeTempInfo[beeTempInfo.Length - 1].Split(',')[1];
