@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SensatoDataConverter));
             this.DropLocation = new System.Windows.Forms.Panel();
             this.SelectFramesButton = new System.Windows.Forms.Button();
             this.ConvertButton = new System.Windows.Forms.Button();
@@ -78,6 +79,7 @@
             this.Controls.Add(this.SelectFramesButton);
             this.Controls.Add(this.DropLocation);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(450, 340);
             this.MinimumSize = new System.Drawing.Size(450, 340);
