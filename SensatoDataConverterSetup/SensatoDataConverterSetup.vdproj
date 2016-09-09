@@ -27,7 +27,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_B666364CB7BF4B64B19B1F28B5456FDD"
+        "MsmKey" = "8:_BC879299677044B485CF5C83F2A10C55"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -181,10 +181,10 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B666364CB7BF4B64B19B1F28B5456FDD"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BC879299677044B485CF5C83F2A10C55"
             {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\Desktop\\Sensanto TableConverter\\SensatoLogo.ico"
-            "TargetName" = "8:SensatoLogo.ico"
+            "SourcePath" = "8:..\\..\\..\\..\\..\\Desktop\\Sensanto TableConverter\\SensatoIcon .ico"
+            "TargetName" = "8:SensatoIcon .ico"
             "Tag" = "8:"
             "Folder" = "8:_27EC4A2F52A1441A8D69DBE0F3276C29"
             "Condition" = "8:"
@@ -306,7 +306,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:_B666364CB7BF4B64B19B1F28B5456FDD"
+        "ARPPRODUCTICON" = "8:_BC879299677044B485CF5C83F2A10C55"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -420,7 +420,7 @@
             "Target" = "8:_1252C273237F4EAF87E9E61FE4154215"
             "Folder" = "8:_1950423AF02042EDB629DD760ACF9874"
             "WorkingFolder" = "8:_27EC4A2F52A1441A8D69DBE0F3276C29"
-            "Icon" = "8:_B666364CB7BF4B64B19B1F28B5456FDD"
+            "Icon" = "8:_BC879299677044B485CF5C83F2A10C55"
             "Feature" = "8:"
             }
         }
@@ -824,7 +824,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_1252C273237F4EAF87E9E61FE4154215"
             {
-            "SourcePath" = "8:..\\SensatoDataConverter\\obj\\Release\\Sensato Data Converter.exe"
+            "SourcePath" = "8:..\\SensatoDataConverter\\obj\\Debug\\Sensato Data Converter.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_27EC4A2F52A1441A8D69DBE0F3276C29"
