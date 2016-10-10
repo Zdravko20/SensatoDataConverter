@@ -69,7 +69,7 @@
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TableConverters\ExcelTableConverter.cs" />
+    <Compile Include="DataConverters\ExcelTableConverter.cs" />
     <Compile Include="FrameSelecting.cs">
       <SubType>Form</SubType>
     </Compile>
